@@ -11,3 +11,9 @@ NEW FEATURES
     o Added study-level loading through MultiAssayExperiment and
       SummarizedExperiment containers together with annotation table
       accessors.
+
+
+CHANGES IN VERSION 0.99.1
+--------------------------
+
+ o Updated R code chunks in HuMMANet.Rmd to enable evaluation and improve user workflow examples.
