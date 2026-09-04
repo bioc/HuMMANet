@@ -148,3 +148,18 @@ class(subset_data[[1]])
 See the vignette for a fuller walkthrough of study discovery, modality loading,
 and manipulation of the resulting `MultiAssayExperiment` and
 `SummarizedExperiment` objects.
+
+## Citation
+
+If you use `HuMMANet`, please cite the preprint:
+
+Verma S, Arora N, Ajay CP, Singh P, Mallick H, Ghosh TS. (2026).
+HuMMANet: A Harmonized Cross-Study Resource for Integrative Analysis of Human
+Gut Microbiome Metabolome Associations. `bioRxiv`.
+doi:[10.64898/2026.08.24.746727](https://doi.org/10.64898/2026.08.24.746727)
+
+You can also retrieve the package citation from R:
+
+```r
+citation("HuMMANet")
+```
