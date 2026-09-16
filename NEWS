@@ -11,3 +11,28 @@ NEW FEATURES
     o Added study-level loading through MultiAssayExperiment and
       SummarizedExperiment containers together with annotation table
       accessors.
+
+
+CHANGES IN VERSION 0.99.1
+--------------------------
+
+ o Updated R code chunks in HuMMANet.Rmd to enable evaluation and improve user workflow examples.
+
+
+CHANGES IN VERSION 0.99.2
+--------------------------
+
+ o Reordered package authors to list Shivangi Verma first and
+   Tarini Shankar Ghosh last.
+
+ o Added package CITATION file for the HuMMANet bioRxiv preprint.
+
+ o Added explicit NAMESPACE importFrom entries for all packages listed
+   in DESCRIPTION Imports.
+
+
+CHANGES IN VERSION 0.99.3
+--------------------------
+
+ o Updated ExperimentHub metadata SourceUrl entries to the Zenodo v3
+   data record.

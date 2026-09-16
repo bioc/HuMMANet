@@ -2,15 +2,9 @@ Package: HuMMANet
 Type: Package
 Title: Curated Paired Human Microbiome-Metabolome Study Data
 biocViews: ExperimentData, ExperimentHub, Homo_sapiens_Data, MicrobiomeData
-Version: 0.99.0
+Version: 0.99.3
 Authors@R:
     c(
-      person(
-        "Nalin", "Arora",
-        email = "naa4050@med.cornell.edu",
-        role = c("aut", "cre"),
-        comment = c(ORCID = "0009-0009-1340-688X")
-      ),
       person(
         "Shivangi", "Verma",
         email = "shivangiv@iiitd.ac.in",
@@ -18,16 +12,22 @@ Authors@R:
         comment = c(ORCID = "0009-0006-8505-0032")
       ),
       person(
-        "Tarini Shankar", "Ghosh",
-        email = "tarini.ghosh@iiitd.ac.in",
-        role = c("aut", "fnd"),
-        comment = c(ORCID = "0000-0001-9570-0365")
+        "Nalin", "Arora",
+        email = "naa4050@med.cornell.edu",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0009-0009-1340-688X")
       ),
       person(
         "Himel", "Mallick",
         email = "him4004@med.cornell.edu",
         role = "aut",
         comment = c(ORCID = "0000-0003-4956-2429")
+      ),
+      person(
+        "Tarini Shankar", "Ghosh",
+        email = "tarini.ghosh@iiitd.ac.in",
+        role = c("aut", "fnd"),
+        comment = c(ORCID = "0000-0001-9570-0365")
       )
     )
 Description: Provides access to curated paired human microbiome-metabolome
@@ -60,4 +60,4 @@ Suggests:
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-Config/roxygen2/version: 8.0.0
+Config/roxygen2/version: 8.1.0

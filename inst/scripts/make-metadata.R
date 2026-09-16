@@ -9,7 +9,7 @@ root_dir <- if (length(args) >= 1L) {
 zenodo_record_id <- if (length(args) >= 2L) {
   args[[2]]
 } else {
-  "22053943"
+  "22799569"
 }
 
 extdata_dir <- file.path(root_dir, "inst", "extdata")
@@ -66,7 +66,7 @@ metadata <- data.frame(
   Genome = NA_character_,
   SourceType = "RDS",
   SourceUrl = paste0(base_url, "/", basename(manifest$local_path), "?download=1"),
-  SourceVersion = "0.99.0",
+  SourceVersion = "0.99.3",
   Species = "Homo sapiens",
   TaxonomyId = "9606",
   Coordinate_1_based = FALSE,

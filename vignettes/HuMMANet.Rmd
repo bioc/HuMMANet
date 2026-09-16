@@ -140,7 +140,7 @@ library(SummarizedExperiment)
 
 ## Discover available studies
 
-```{r list-studies, eval = FALSE}
+```{r list-studies}
 studies <- HuMMANet_studies()
 length(studies)
 head(studies)
@@ -153,7 +153,7 @@ object.
 
 ## Inspect the study index
 
-```{r study-index, eval = FALSE}
+```{r study-index}
 idx <- HuMMANet_study_index()
 head(
   idx[, c(
@@ -172,12 +172,12 @@ species, original metabolite, harmonized metabolite, and annotation resources.
 This is useful when deciding which studies and which data layers to retrieve
 for a particular analysis.
 
-The study-loading examples below illustrate the intended `ExperimentHub`
-workflow. They are shown but not evaluated during package checks.
+The study-loading examples below illustrate the intended user workflow through
+the package accessors.
 
 ## Load one study
 
-```{r load-study, eval = FALSE}
+```{r load-study}
 study_id <- idx$study[[1]]
 available <- HuMMANet_available_modalities(
   study_id
@@ -199,7 +199,7 @@ those assays.
 
 ## Inspect the study structure
 
-```{r inspect-structure, eval = FALSE}
+```{r inspect-structure}
 experiments(one_study)
 sampleMap(one_study)
 ```
@@ -212,7 +212,7 @@ shared study-level sample metadata.
 
 ## Load the study metadata
 
-```{r load-metadata, eval = FALSE}
+```{r load-metadata}
 metadata_profile <- HuMMANet_load_modality(
   study_id,
   "MetadataProfile"
@@ -227,7 +227,7 @@ custom joins or downstream analysis.
 
 ## Inspect the original metabolite profile
 
-```{r original-profile, eval = FALSE}
+```{r original-profile}
 original_profile <- HuMMANet_load_modality(
   study_id,
   "OriginalMetaboliteProfile"
@@ -245,7 +245,7 @@ study-specific metabolite matrix while preserving its feature identities.
 
 ## Load the harmonized metabolite profile
 
-```{r harmonized-profile, eval = FALSE}
+```{r harmonized-profile}
 harmonized_profile <- HuMMANet_load_modality(
   study_id,
   "harmonizedMetaboliteProfile"
@@ -265,7 +265,7 @@ quantitative matrix.
 
 ## Inspect the taxa abundance profile
 
-```{r taxa-profile, eval = FALSE}
+```{r taxa-profile}
 taxa_profile <- HuMMANet_load_modality(
   study_id,
   "taxaAbundanceProfile"
@@ -283,7 +283,7 @@ consistent across modalities.
 
 ## Load an annotation table
 
-```{r pathway-annotations, eval = FALSE}
+```{r pathway-annotations}
 pathway_annotations <- HuMMANet_load_modality(
   study_id,
   "metabolitePathwayAnnotations"
@@ -299,7 +299,7 @@ represented as annotations rather than sample-by-feature matrices.
 
 ## Inspect study-level annotation metadata
 
-```{r study-metadata-slot, eval = FALSE}
+```{r study-metadata-slot}
 names(metadata(one_study))
 ```
 
@@ -310,7 +310,7 @@ container instead of managing separate tables manually.
 
 ## Extract assay matrices for downstream analysis
 
-```{r assay-matrices, eval = FALSE}
+```{r assay-matrices}
 harm_mat <- assay(harmonized_profile)
 taxa_mat <- assay(taxa_profile)
 
@@ -325,7 +325,7 @@ and sample-level context required for reproducible analysis.
 
 ## Subset a study object
 
-```{r subset-study, eval = FALSE}
+```{r subset-study}
 sample_keep <- rownames(colData(one_study))[seq_len(min(5, nrow(colData(one_study))))]
 study_subset <- one_study[, sample_keep]
 
@@ -340,7 +340,7 @@ table separately.
 
 ## Load multiple studies and modalities
 
-```{r multiple-studies, eval = FALSE}
+```{r multiple-studies}
 selected_studies <- studies[seq_len(min(2, length(studies)))]
 multi <- HuMMANet(
     studies = selected_studies,

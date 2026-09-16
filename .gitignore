@@ -1,5 +1,6 @@
 *.tar.gz
 *.Rcheck
+*.BiocCheck/
 .Rhistory
 .RData
 *.xlsx

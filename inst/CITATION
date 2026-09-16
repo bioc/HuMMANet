@@ -1,0 +1,28 @@
+citHeader("To cite HuMMANet in publications use:")
+
+bibentry(
+  bibtype = "Article",
+  title = paste(
+    "HuMMANet: A Harmonized Cross-Study Resource for Integrative Analysis",
+    "of Human Gut Microbiome Metabolome Associations"
+  ),
+  author = c(
+    person("Shivangi", "Verma"),
+    person("Nalin", "Arora"),
+    person("Chandra Prakash", "Ajay"),
+    person("Pankhuri", "Singh"),
+    person("Himel", "Mallick"),
+    person("Tarini Shankar", "Ghosh")
+  ),
+  journal = "bioRxiv",
+  year = "2026",
+  doi = "10.64898/2026.08.24.746727",
+  url = "https://www.biorxiv.org/content/10.64898/2026.08.24.746727v1",
+  note = "Preprint",
+  textVersion = paste(
+    "Verma S, Arora N, Ajay CP, Singh P, Mallick H, Ghosh TS. (2026).",
+    "HuMMANet: A Harmonized Cross-Study Resource for Integrative Analysis",
+    "of Human Gut Microbiome Metabolome Associations. bioRxiv.",
+    "doi:10.64898/2026.08.24.746727"
+  )
+)
